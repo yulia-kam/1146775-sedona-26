@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Юлия Камаева](https://up.htmlacademy.ru/htmlcss/26/user/1146775).
-* Наставник: [Роман Духницький] (https://htmlacademy.ru/profile/id59884).
+* Наставник: [Роман Духницький](https://htmlacademy.ru/profile/id59884).
 
 ---
 
