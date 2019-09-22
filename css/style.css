@@ -1,0 +1,411 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", sans-serif;
+    color: #333333;
+    text-transform: uppercase;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*Главная страница index.html*/
+
+.main-navigation {
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.main-navigation,
+.site-navigation {
+    list-style: none;
+}
+
+.main-navigation a,
+.site-navigation a {
+    color: #000000;
+}
+
+.site-navigation .main-navigation-current {
+    color: #766357;
+}
+
+.large-text {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+}
+
+.five-reasons {
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.large-text-2 {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: bold;
+}
+
+.large-text-2-text-below {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+/*Стилизация списков с преимуществами (5 основных и 3 вложенных в первый) на index.html*/
+
+.five-reasons-list {
+    list-style: none;
+}
+
+.five-reasons-list {
+    color: #000000;
+}
+
+.five-reasons-list h3 {
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: bold;
+}
+
+.five-reasons-list p {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.five-reasons-list li:nth-child(1),
+.five-reasons-list li:nth-child(2) {
+    color: #ffffff;
+}
+
+.advantage-1,
+.advantage-2 {
+    width: 400px;
+    height: 256px;
+    background-color: #81b3d2;
+    text-align: center;
+}
+
+.additional-advantages-list p {
+    color: #000000;
+}
+
+.additional-advantages-list h3 {
+    color: #000000;
+}
+
+.advantage-3,
+.advantage-4,
+.advantage-5 {
+    width: 400px;
+    height: 256px;
+    background-color: #eeeeee;
+    text-align: center;
+}
+
+.subadvantage-1,
+.subadvantage-2,
+.subadvantage-3 {
+    width: 400px;
+    height: 330px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+/*Окно поиска отеля на index.html*/
+
+.hotel-search-button {
+    background-color: #766357;
+    color: #ffffff;
+    text-align: center;
+}
+
+.hotel-search-button:hover {
+    background-color: #604e43;
+}
+
+.hotel-search-button:active {
+    color: #928a85;
+    background-color: #503e33;
+}
+
+.pop-up-search {
+    background-color: #ffffff;
+}
+
+.arrival-date input {
+    font-size: 14px;
+
+    color: #000000;
+    background-color: #f2f2f2;
+    text-align: left;
+    border: 2px #e5e5e5;
+}
+
+.arrival-date input:hover {
+    font-size: 14px;
+
+    color: #000000;
+    background-color: #ebebeb;
+    text-align: left;
+    border: 2px #e5e5e5;
+}
+
+.arrival-date input:focus {
+    font-size: 14px;
+
+    color: #000000;
+    background-color: transparent;
+    text-align: left;
+    border: 2px #e5e5e5;
+}
+
+.departure-date input {
+    font-size: 14px;
+    color: #000000;
+    background-color: #f2f2f2;
+    text-align: left;
+    border: 2px #e5e5e5;
+}
+
+.departure-date input:hover {
+    background-color: #ebebeb;
+}
+
+.departure-date input:focus {
+    background-color: transparent;
+}
+
+.decrease-button {
+    background-color: #f2f2f2;
+    opacity: 0.9;
+    border: 0px;
+    width: 114px;
+    height: 38px;
+}
+
+.increase-button {
+    background-color: #f2f2f2;
+    opacity: 1.9;
+    border: 0px;
+    width: 114px;
+    height: 38px;
+}
+
+.decrease {
+    color: #a9a9a9;
+    text-align: center;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+}
+
+.decrease:hover {
+    color: #000000;
+}
+
+.decrease:active {
+    color: #81b3d2;
+}
+
+.increase {
+    color: #a9a9a9;
+    text-align: center;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+}
+
+.increase:hover {
+    color: #000000;
+}
+
+.increase:active {
+    color: #81b3d2;
+}
+
+.submit-button {
+    background-color: #81b3d2;
+    color: #ffffff;
+    text-align: center;
+}
+
+.submit-button:hover {
+    background-color: #669ec0;
+}
+
+.submit-button:active {
+    color: #928a85;
+    background-color: #5496bd;
+}
+
+
+
+
+/*Страница hotels.html*/
+
+.inner-page {
+    color: #333333;
+    background-color: #ffffff;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.selection-checkboxes {
+    background-image: url("img/hotels-search-background.jpg")
+}
+
+.hotels-options {
+    list-style: none;
+}
+
+
+
+
+
+.sorting {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.sorting {
+    list-style: none;
+}
+
+.sorting-link {
+    color: #000000;
+}
+
+.by-price {
+    color: #81b3d2;
+}
+
+.by-type,
+.by-raiting {
+    color: #cacaca;
+    border-bottom: 1px dashed #81b3d2;
+}
+
+.by-type:hover,
+.by-raiting:hover {
+    color: #81b3d2;
+    border-bottom: 1px dashed #81b3d2;
+}
+
+.by-type:active,
+.by-raiting:active {
+    color: #000000;
+    border-bottom: none;
+}
+
+.details {
+    background-color: #81b3d2;
+    color: #ffffff
+}
+
+.delails:hover {
+    background-color: #669ec0;
+}
+
+.details:active {
+    color: #94b9d2;
+    background-color: #5496bd;
+}
+
+.book {
+    background-color: #766357;
+    color: #ffffff
+}
+
+.book:hover {
+    background-color: #604e43;
+}
+
+.book:active {
+    color: #928a85;
+    background-color: #503e33;
+}
+
+.hotel-name {
+    color: #000000;
+}
+
+.hotel-name:hover {
+    color: #81b3d2;
+}
+
+.hotel-name:active {
+    color: #cacaca;
+}
+
+.search-results {
+    list-style: none;
+}
+
+.search-results p {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.raiting {
+    width: 110px;
+    height: 27px;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+
+
+
+/* Футтер*/
+
+.main-footer {
+    background-color: #fdfdfd;
+    color: #000000;
+
+    .footer-social {
+        text-align: center;
+    }
+
+    .footer-social ul {
+        list-style: none;
+    }
+
+    .social-button {
+        color: #ffffff;
+    }
+
+    .logo-htmlacademy {
+        color: #231f20;
+    }
+
+    .logo-htmlacademy:hover {
+        color: #81b3d2;
+    }
+
+    .logo-htmlacademy:active {
+        color: #bdbbbc;
+    }
+
+    .footer-social {
+        background-color #81b3d2;
+    }
+
+    .footer-social:hover {
+        background-color: #669ec0;
+    }
+
+    .footer-social:active {
+        background-color: #5496bd;
+    }
