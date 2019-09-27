@@ -14,6 +14,8 @@ a {
 
 /*Главная страница index.html*/
 
+/*Навигация*/
+
 .main-navigation {
     font-size: 14px;
     line-height: 26px;
@@ -21,10 +23,49 @@ a {
     font-weight: bold;
 }
 
+.site-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 56px;
+}
+
+.site-navigation .info {
+    margin-left: 111px;
+    margin-top: 13px;
+}
+
+.site-navigation .photo-and-video {
+    margin-left: 148px;
+    margin-top: 13px;
+}
+
+.site-navigation .logo {
+    margin-top: none;
+    margin-left: 120.5px;
+}
+
+.site-navigation .state-map {
+    margin-left: 128px;
+    margin-top: 13px;
+}
+
+.site-navigation .hotels-link {
+    padding-left: 165px;
+    margin-top: 13px;
+}
+
+.sedona-background {
+    margin-left: 40px;
+    height:
+}
+
+/*не нужно уже, т.к. навигация div'ами, а не списком
 .main-navigation,
 .site-navigation {
     list-style: none;
 }
+*/
 
 .main-navigation a,
 .site-navigation a {
@@ -35,16 +76,25 @@ a {
     color: #766357;
 }
 
+/*Заголовок и подзаголовок*/
+
 .large-text {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
+    text-align: center;
+    margin-right: 305px;
+    margin-top: 55px;
 }
 
 .five-reasons {
     font-size: 14px;
     line-height: 26px;
+    margin-top: 29px;
+    margin-left: 395px;
 }
+
+/*Стилизация списков с преимуществами (5 основных и 3 вложенных в первый) на index.html*/
 
 .large-text-2 {
     font-size: 30px;
@@ -52,12 +102,28 @@ a {
     font-weight: bold;
 }
 
+.number {
+    padding-top: 3px;
+}
+
+.losung {
+    padding-top: 6px;
+}
+
+.subadvantages {
+    display: flex;
+    justify-content: flex-start;
+}
+
 .large-text-2-text-below {
     font-size: 14px;
     line-height: 24px;
 }
 
-/*Стилизация списков с преимуществами (5 основных и 3 вложенных в первый) на index.html*/
+.real-town {
+    display: flex;
+    margin-top: 50px;
+}
 
 .five-reasons-list {
     list-style: none;
@@ -86,9 +152,15 @@ a {
 .advantage-1,
 .advantage-2 {
     width: 400px;
-    height: 256px;
+    height: 220px;
     background-color: #81b3d2;
     text-align: center;
+    padding-top: 28px;
+    color: #ffffff;
+}
+
+.accomodation {
+    padding-top: 5px;
 }
 
 .additional-advantages-list p {
@@ -113,8 +185,28 @@ a {
 .subadvantage-3 {
     width: 400px;
     height: 330px;
-    background-color: #ffffff;
-    text-align: center;
+    background-color: transparent;
+    /*#ffffff*/
+}
+
+.subadvantage-1:nth-child(1) {
+    margin-top: 53px;
+    margin-left: 122px;
+}
+
+.subadvantage-2:nth-child(1) {
+    margin-top: 39px;
+    margin-left: 127px;
+}
+
+.subadvantage-3:nth-child(1) {
+    margin-top: 39px;
+    margin-left: 127px;
+}
+
+.other-advantages {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /*Окно поиска отеля на index.html*/
@@ -373,39 +465,56 @@ a {
 .main-footer {
     background-color: #fdfdfd;
     color: #000000;
+}
 
-    .footer-social {
-        text-align: center;
-    }
+.footer-social {
+    text-align: center;
+}
 
-    .footer-social ul {
-        list-style: none;
-    }
+.footer-social ul {
+    list-style: none;
+}
 
-    .social-button {
-        color: #ffffff;
-    }
+.social-button {
+    color: #ffffff;
+}
 
-    .logo-htmlacademy {
-        color: #231f20;
-    }
+.logo-htmlacademy {
+    color: #231f20;
+}
 
-    .logo-htmlacademy:hover {
-        color: #81b3d2;
-    }
+.logo-htmlacademy:hover {
+    color: #81b3d2;
+}
 
-    .logo-htmlacademy:active {
-        color: #bdbbbc;
-    }
+.logo-htmlacademy:active {
+    color: #bdbbbc;
+}
 
-    .footer-social {
-        background-color #81b3d2;
-    }
+.footer-social {
+    background-color #81b3d2;
+}
 
-    .footer-social:hover {
-        background-color: #669ec0;
-    }
+.footer-social:hover {
+    background-color: #669ec0;
+}
 
-    .footer-social:active {
-        background-color: #5496bd;
-    }
+.footer-social:active {
+    background-color: #5496bd;
+}
+
+/* ----- Сеточные стили ----- */
+
+
+html,
+body {
+    min-width: 1280px;
+    min-height: 2762px;
+}
+
+body {
+    /* Временно для сетки */
+    background-image: url('../img/sedona-index.jpg');
+    background-size: 1280px 2762px;
+    background-repeat: no-repeat;
+}
