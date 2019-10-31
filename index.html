@@ -6,17 +6,19 @@
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="main-page">
     <div class="container wrapper">
         <!-- Header -->
         <header class="main-header">
-            <div class="header-logo">
-                <a href="#"><img src="img/logo.svg" alt="Логотип города Седоны" width="138" height="70"></a>
-            </div>
+
             <nav class="main-navigation">
+                <div class="header-logo">
+                    <a href="#"><img src="img/logo.svg" alt="Логотип города Седоны" width="138" height="70"></a>
+                </div>
+
                 <ul class="site-navigation">
                     <li><a href="#">Информация</a></li>
                     <li><a href="#">Фото и видео</a></li>
@@ -30,7 +32,11 @@
         <main>
             <!-- Intro -->
             <section>
-                <div class="welcome-block"><img src="img/background-total-1200.jpg" alt="Красивый вид города Седоны" width="1200" height="508"></div>
+
+                <div class="welcome-block">
+                    <img src="img/welcome.png" alt="Welcome to Sedona!" width="458" height="352">
+                </div>
+
                 <div class="slogan">
                     <p class="large-text">Седона - небольшой городок в Аризоне,
                         заслуживающий большего!</p>
@@ -51,7 +57,7 @@
                             <p class="reason">Седона - не аттракцион для туристов,
                                 там течет своя жизнь</p>
                         </div>
-                        <div class="advantage-block-img"><img src="img/view1-resized.jpg" alt="Еще один красивый вид города Седоны" width="800" height="256"></div>
+                        <div class="advantage-block-img"><img src="img/view1-resized.png" alt="Еще один красивый вид города Седоны" width="800" height="256"></div>
                     </div>
 
                     <div class="additional-advantages-list">
@@ -146,18 +152,22 @@
                 </div>
                 <div class="booking-form">
                     <div class="pop-up-search"><button type="button" class="hotel-search-button">Поиск гостиницы в Седоне</button></div>
-                    <form action="https://echo.htmlacademy.ru" method="post">
+                    <form action="https://echo.htmlacademy.ru" method="post" class="booking-form">
 
                         <div class="arrival">
                             <div><label for="arrival-date" class="arrival-date">Дата заезда: </label></div>
-                            <div><input class="arrival-date-input" id="arrival-date" type="text" name="date-1" value="" placeholder="24 апреля 2017"></div>
-
+                            <div class="arrival-date-input-and-calendar">
+                                <div><input class="arrival-date-input" id="arrival-date" type="text" name="date-1" value="" placeholder="24 апреля 2017"></div>
+                                <div><button type="button" class="calendar-button"></button></div>
+                            </div>
                         </div>
 
                         <div class="departure">
                             <div><label for="departure-date" class="departure-date">Дата выезда: </label></div>
-                            <div><input class="departure-date-input" id="departure-date" type="text" name="date-2" value="" placeholder="4 июля 2017"></div>
-
+                            <div class="departure-date-input-and-calendar">
+                                <div><input class="departure-date-input" id="departure-date" type="text" name="date-2" value="" placeholder="4 июля 2017"></div>
+                                <div><button type="button" class="calendar-button"></button></div>
+                            </div>
                         </div>
 
                         <div class="adults-and-kids">
@@ -197,21 +207,26 @@
 
         <!-- Footer -->
         <footer class="main-footer">
-            <a href="#" class="hashtag">#Visitsedona</a>
+            <div class="footer-hashtag"><a href="#">#Visitsedona</a></div>
             <div class="footer-social">
                 <ul>
-                    <li><a class="social-button" href="#"><img src="img/twitter.svg" alt="Логотип Twitter" width="17" height="15"></a></li>
-                    <li><a class="social-button" href="#"><img src="img/fb-icon.svg" alt="Логотип Facebook" width="12" height="22"></a></li>
-                    <li><a class="social-button" href="#"><img src="img/youtube.svg" alt="Логотип YouTube" width="16" height="20"></a></li>
+                    <li><a class="social-button social-button-tw" href="#"><img src="img/twitter.svg" alt="Логотип Twitter" width="17" height="15"></a></li>
+                    <li><a class="social-button social-button-fb" href="#"><img src="img/fb-icon.svg" alt="Логотип Facebook" width="12" height="22"></a></li>
+                    <li><a class="social-button social-button-yt" href="#"><img src="img/youtube.svg" alt="Логотип YouTube" width="16" height="20"></a></li>
                 </ul>
             </div>
             <div class="footer-copyright">
-                <p>Website by</p>
-                <a href="https://htmlacademy.ru">Html academy</a>
+                <ul>
+                    <li>
+                        <p>Website by</p>
+                    </li>
+                    <li><a href="https://htmlacademy.ru">Html academy</a></li>
+                </ul>
             </div>
 
         </footer>
         <!-- /Footer -->
+
     </div>
 </body>
 
