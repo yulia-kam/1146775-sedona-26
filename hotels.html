@@ -28,7 +28,7 @@
             </nav>
         </header>
         <!-- /Header -->
-        
+
 
         <main>
             <section>
@@ -41,13 +41,13 @@
 
                                 <p class="options-header">Инфраструктура:</p>
                                 <div class="options-to-select">
-                                    <input type="checkbox" name="option-1" value="swimmingpool" id="swimmingpool" checked />
+                                    <input type="checkbox" name="option-1" value="swimmingpool" id="swimmingpool" class="checkbox" checked />
                                     <label for="swimmingpool">Бассейн</label>
 
-                                    <input type="checkbox" name="option-2" value="parking" id="parking" />
+                                    <input type="checkbox" name="option-2" value="parking" id="parking" class="checkbox" />
                                     <label for="parking">Парковка</label>
 
-                                    <input type="checkbox" name="option-3" value="wi-fi" id="wi-fi" />
+                                    <input type="checkbox" name="option-3" value="wi-fi" id="wi-fi" class="checkbox" />
                                     <label for="wi-fi">Wi-Fi</label>
                                 </div>
                             </li>
@@ -106,8 +106,8 @@
                         </ul>
 
                         <div class="sorting-arrow">
-                            <a class="arrow-up"></a>
-                            <a class="arrow-down" href="#"></a>
+                            <a class="arrow-up" aria-label="Стрелка вверх"></a>
+                            <a class="arrow-down" href="#" aria-label="Стрелка вниз"></a>
                         </div>
                     </div>
                 </div>
@@ -124,8 +124,8 @@
                                 <p>Гостиница</p>
                                 <p class="price-1">От 4000 p.</p>
                             </div>
-                            <button class="details" type="button">Подробнее</button>
-                            <button class="book" type="button">Забронировать</button>
+                            <a class="details" href="#">Подробнее</a>
+                            <a class="book" href="#">Забронировать</a>
                         </div>
                         <div class="hotel-rating-1">
                             <p><img src="img/star-1.png" alt="Рейтинг гостиницы Amara Resort & SPA" width="90" height="17"></p>
@@ -143,8 +143,8 @@
                                 <p>Мотель</p>
                                 <p class="price-2">От 3000 p.</p>
                             </div>
-                            <button class="details" type="button">Подробнее</button>
-                            <button class="book" type="button">Забронировать</button>
+                            <a class="details" href="#">Подробнее</a>
+                            <a class="book" href="#">Забронировать</a>
                         </div>
                         <div class="hotel-rating-2">
                             <p><img src="img/star-2.png" alt="Рейтинг мотеля Desert Quail INN" width="65" height="17"></p>
@@ -163,8 +163,8 @@
                                 <p>Апартаменты</p>
                                 <p class="price-3">От 2000 p.</p>
                             </div>
-                            <button class="details" type="button">Подробнее</button>
-                            <button class="book" type="button">Забронировать</button>
+                            <a class="details" href="#">Подробнее</a>
+                            <a class="book" href="#">Забронировать</a>
                         </div>
                         <div class="hotel-rating-3">
                             <p><img src="img/star-3.png" alt="Рейтинг апартементов Villas at Poco Diablo" width="41" height="17"></p>
@@ -198,6 +198,7 @@
         </footer>
         <!-- /Footer -->
     </div>
+
 </body>
 
 </html>

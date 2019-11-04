@@ -6,6 +6,7 @@ body {
     text-transform: uppercase;
     background-color: #ffffff;
     width: 1280px;
+    font-family: 'PT Sans', 'Helvetica', 'Arial', sans-serif;
 }
 
 .container {
@@ -229,12 +230,12 @@ a {
     width: 400px;
     background-color: #ffffff;
     text-align: center;
-    padding: 56px 20px 25px;
+    padding: 48px 20px 25px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-.subadvantage .icon {
+/* .subadvantage .icon {
     height: 80px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -245,10 +246,52 @@ a {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+} */
+
+.icon-housing::before {
+    background-image: url(../img/icon-1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    margin-top: 13px;
+    margin-bottom: 25px;
+    content: '';
+    vertical-align: top;
+}
+
+.icon-hamburger::before {
+    background-image: url(../img/icon-2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    margin-top: 13px;
+    margin-bottom: 25px;
+    content: '';
+    vertical-align: top;
+}
+
+.icon-souvenirs::before {
+    background-image: url(../img/icon-3.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    margin-top: 13px;
+    margin-bottom: 25px;
+    content: '';
+    vertical-align: top;
 }
 
 .subadvantage-title {
-    padding-top: 5px;
+    margin-top: -1px;
 }
 
 .subadvantage p {
@@ -316,6 +359,8 @@ a {
     text-transform: uppercase;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    display: inline-block;
+    padding-top: 32px;
 }
 
 .hotel-search-button:hover {
@@ -626,7 +671,6 @@ a {
     background-color: #5496bd;
 }
 
-
 /* Footer*/
 
 .main-footer {
@@ -829,16 +873,17 @@ a {
 
 .selection-checkboxes {
     background-image: url("../img/hotels-search-background.jpg");
-    background-size: 1200px 217px;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-color: #809dbd;
     position: relative;
     top: -15px;
     color: #ffffff;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     min-height: 217px;
+    width: 1200px;
 }
-
 
 .options {
     display: -webkit-box;
@@ -858,12 +903,9 @@ a {
 
 .hotels-options {
     list-style: none;
-
     font-size: 14px;
     line-height: 21px;
-
     color: #ffffff;
-
 }
 
 input[type='checkbox'] {
@@ -884,6 +926,10 @@ input[type='checkbox']+label:hover {
 }
 
 input[type='checkbox']+label:focus {
+    color: #fefdfd;
+}
+
+input[type='checkbox']+label:active {
     color: #fefdfd;
 }
 
@@ -1131,6 +1177,7 @@ input[type='checkbox']:checked:disabled+label::before {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     height: 27px;
+    display: inline-block;
 }
 
 .delails:hover {
@@ -1156,6 +1203,7 @@ input[type='checkbox']:checked:disabled+label::before {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     height: 27px;
+    display: inline-block;
 }
 
 .book:hover {

@@ -11,7 +11,7 @@
 
 <body class="main-page">
     <div class="container wrapper">
-      
+
         <!-- Header -->
         <header class="main-header">
 
@@ -59,43 +59,35 @@
                                 там течет своя жизнь
                             </p>
                         </div>
-                        <div class="advantage-block-img"><img src="img/view1-resized.png" alt="Еще один красивый вид города Седоны" width="800" height="256"></div>
+                        <div class="advantage-block-img"><img src="img/view1-resized.jpg" alt="Еще один красивый вид города Седоны" width="800" height="256"></div>
                     </div>
 
                     <div class="additional-advantages-list">
-                        <div class="subadvantage">
-                            <div class="icon"><img src="img/icon-1.svg" alt="Иконка с домом" width="75" height="72"></div>
+                        <div class="subadvantage icon-housing">
+                            <!-- <div class="icon"><img src="img/icon-1.svg" alt="Иконка с домом" width="75" height="72"></div> -->
                             <h3 class="subadvantage-title">Жилье</h3>
                             <p>Рекомендуем пожить в настоящем мотеле,
                                 все как в кино!</p>
                         </div>
 
 
-                        <div class="subadvantage">
-
-
-                            <div class="icon"><img class="icon-food subadvantage-icon" src="img/icon-2.svg" alt="Иконка с едой" width="74" height="70"></div>
+                        <div class="subadvantage icon-hamburger">
+                            <!-- <div class="icon"><img class="icon-food subadvantage-icon" src="img/icon-2.svg" alt="Иконка с едой" width="74" height="70"></div> -->
                             <h3 class="subadvantage-title">Еда</h3>
                             <p>Всегда заказывайте фирменный бургер,
                                 вы не разочаруетесь!</p>
-
-
                         </div>
 
-                        <div class="subadvantage">
-
-
-                            <div class="icon"><img class="icon-souvenirs" src="img/icon-3.svg" alt="Иконка с сувениром" width="64" height="76"></div>
+                        <div class="subadvantage icon-souvenirs">
+                            <!-- <div class="icon"><img class="icon-souvenirs" src="img/icon-3.svg" alt="Иконка с сувениром" width="64" height="76"></div> -->
                             <h3 class="subadvantage-title">Сувениры</h3>
                             <p>Не только китайского,
-                                но и местного производства !</p>
-
-
+                                но и местного производства!</p>
                         </div>
                     </div>
 
                     <div class="advantage-block-2">
-                        <div class="advantage-block-img"><img src="img/view2-resized.png" alt="И еще один красивый вид города Седоны" width="800" height="256"></div>
+                        <div class="advantage-block-img"><img src="img/view2-resized.jpg" alt="И еще один красивый вид города Седоны" width="800" height="256"></div>
                         <div class="advantage-2">
 
                             <h3 class="advantage-title">Там есть мост дьявола</h3>
@@ -153,14 +145,14 @@
                     <p class="large-text-2-text-below">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
                 </div>
                 <div class="booking-form">
-                    <div class="pop-up-search"><button type="button" class="hotel-search-button">Поиск гостиницы в Седоне</button></div>
+                    <div class="pop-up-search"><a href="#" class="hotel-search-button">Поиск гостиницы в Седоне</a></div>
                     <form action="https://echo.htmlacademy.ru" method="post" class="booking-form">
 
                         <div class="arrival">
                             <div><label for="arrival-date" class="arrival-date">Дата заезда: </label></div>
                             <div class="arrival-date-input-and-calendar">
                                 <div><input class="arrival-date-input" id="arrival-date" type="text" name="date-1" value="" placeholder="24 апреля 2017"></div>
-                                <div><button type="button" class="calendar-button"></button></div>
+                                <div><button type="button" class="calendar-button" aria-label="Иконка календаря"></button></div>
                             </div>
                         </div>
 
@@ -168,7 +160,7 @@
                             <div><label for="departure-date" class="departure-date">Дата выезда: </label></div>
                             <div class="departure-date-input-and-calendar">
                                 <div><input class="departure-date-input" id="departure-date" type="text" name="date-2" value="" placeholder="4 июля 2017"></div>
-                                <div><button type="button" class="calendar-button"></button></div>
+                                <div><button type="button" class="calendar-button" aria-label="Иконка календаря"></button></div>
                             </div>
                         </div>
 
@@ -230,6 +222,7 @@
         <!-- /Footer -->
 
     </div>
+
 </body>
 
 </html>
