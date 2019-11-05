@@ -441,14 +441,14 @@ a {
 .calendar-button:hover {
     background-image: url(../img/sprites/calendar-sprite.png);
     background-repeat: no-repeat;
-    background-position: 5px -20px;
+    background-position: 5px -22px;
     background-color: #f2f2f2;
 }
 
 .calendar-button:active {
     background-image: url(../img/sprites/calendar-sprite.png);
     background-repeat: no-repeat;
-    background-position: 5px -138px;
+    background-position: 5px -140px;
     background-color: #f2f2f2;
 }
 
@@ -921,15 +921,15 @@ input[type='checkbox']+label {
     margin-left: 0px;
 }
 
-input[type='checkbox']+label:hover {
+input[type='checkbox']:hover+label {
     color: #ffffff;
 }
 
-input[type='checkbox']+label:focus {
+input[type='checkbox']:focus+label {
     color: #fefdfd;
 }
 
-input[type='checkbox']+label:active {
+input[type='checkbox']:active+label {
     color: #fefdfd;
 }
 
