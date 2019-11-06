@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/normalize.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="main-page">
@@ -146,7 +146,7 @@
                 </div>
                 <div class="booking-form">
                     <div class="pop-up-search"><a href="#" class="hotel-search-button">Поиск гостиницы в Седоне</a></div>
-                    <form action="https://echo.htmlacademy.ru" method="post" class="booking-form">
+                    <form action="https://echo.htmlacademy.ru" method="post" class="booking-form-form">
 
                         <div class="arrival">
                             <div><label for="arrival-date" class="arrival-date">Дата заезда: </label></div>
@@ -193,7 +193,11 @@
                         </div>
                     </form>
                 </div>
-                <div><img src="img/map.jpg" alt="Карта города Седоны" width="1200" height="593"></div>
+                <div class="map">
+                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13094.579969153865!2d-111.8119167259985!3d34.86514656987722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C%20AZ%2086336%2C%20USA!5e0!3m2!1sen!2sru!4v1573031423287!5m2!1sen!2sru" width="1200" height="593" frameborder="0" style="border:0;" allowfullscreen=""></iframe> -->
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac2a16f7b51e001d73a2743bc1ffe330d97e1e5ab3c9b54226ff3fa62d33681b1&amp;source=constructor" width="1200" height="593" frameborder="0"></iframe>
+                    <p><img src="img/map.jpg" alt="Карта города Седоны" width="1200" height="593"></p>
+                </div>
             </section>
         </main>
 
@@ -222,6 +226,12 @@
         <!-- /Footer -->
 
     </div>
+
+
+
+    <script src="js/script.min.js"></script>
+
+
 
 </body>
 
